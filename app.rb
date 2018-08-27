@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/piglatinize' do
-    obj = Piglatinize.new 
+    obj = PigLatinize.new 
     @piglatinized_text = obj.piglatinize(params[:user_phrase])
     erb:output
   end
