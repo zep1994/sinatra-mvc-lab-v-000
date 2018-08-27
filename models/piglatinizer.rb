@@ -17,7 +17,7 @@ class PigLatinizer
   def piglatinize(text)
     @input_text = text
     new_phrase = []
-    words = input_text.split(" ")
+    words = @input_text.split(" ")
     words.each do |word|
      if @@CONSTANT_VOWELS.include?(word[0].downcase)
        new_phrase << word + "word" + @@appender
