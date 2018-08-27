@@ -1,6 +1,6 @@
 require 'pry'
 
-class Piglatinizer
+class PigLatinizer
   
   attr_accessor :piglatinized_text
   
